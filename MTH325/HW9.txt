@@ -1,0 +1,6 @@
+1. a: A, Q, C, K, F, D, U, B, N, X, J, I, R, O, W, M, P
+    b: A, V, L, I, F, T, R, E, C, O, N, M, D
+    c: Y, F, O, X, Z, A, S, L, I, B, N, G, W, R, D, V, E
+2. a: A, Q, U, I, C, K, B, R, O, W, N, F, X, J, M, P, D
+    b: A, V, L, F, T, E, C, N, M, D, O, R, I
+    c:  Y, F, O, I, B, V, E, X, Z, N, G, W, A, S, R, D, L
