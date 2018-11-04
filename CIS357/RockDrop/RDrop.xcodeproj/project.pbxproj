@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0773C6341FDDDD0E003F361A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773C6331FDDDD0E003F361A /* GradientView.swift */; };
+		0774BCC21FDDE6AC00B9BF3B /* RockDropClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774BCC11FDDE6AC00B9BF3B /* RockDropClearButton.swift */; };
+		0774BCC61FDDEB9A00B9BF3B /* DINPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0774BCC41FDDEADE00B9BF3B /* DINPro-Medium.ttf */; };
+		0774BCC71FDDEB9A00B9BF3B /* DINPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0774BCC51FDDEADF00B9BF3B /* DINPro-Regular.ttf */; };
+		07E4C77E1FDE102200F4914D /* RockDropPlainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4C77D1FDE102200F4914D /* RockDropPlainTextField.swift */; };
+		07E4C7821FDEE41B00F4914D /* RockDropTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4C7811FDEE41B00F4914D /* RockDropTabBarController.swift */; };
+		07E4C7841FDEE8A900F4914D /* RockDropNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4C7831FDEE8A900F4914D /* RockDropNavController.swift */; };
+		07E4C78A1FDF113F00F4914D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07E4C7891FDF113F00F4914D /* GoogleMaps.bundle */; };
+		68B97548B91EDAD70C3AAFFD /* Pods_RDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B1EC1E6C414E77EAC232A /* Pods_RDrop.framework */; };
+		8404ED661FCC7458003B00A4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404ED651FCC7458003B00A4 /* MapViewController.swift */; };
+		8404ED681FCCEE75003B00A4 /* darksky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404ED671FCCEE75003B00A4 /* darksky.swift */; };
+		8454BFCD1FD9B65700C1D95C /* RockCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454BFCC1FD9B65700C1D95C /* RockCellTableViewCell.swift */; };
+		8454BFD11FD9EFB700C1D95C /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454BFD01FD9EFB700C1D95C /* GradientViewController.swift */; };
+		8454BFD31FD9F15500C1D95C /* GradientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454BFD21FD9F15500C1D95C /* GradientTableViewController.swift */; };
+		845F793D1FBA0C6900307360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F793C1FBA0C6900307360 /* AppDelegate.swift */; };
+		845F79421FBA0C6900307360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845F79401FBA0C6900307360 /* Main.storyboard */; };
+		845F79441FBA0C6900307360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845F79431FBA0C6900307360 /* Assets.xcassets */; };
+		845F79471FBA0C6900307360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845F79451FBA0C6900307360 /* LaunchScreen.storyboard */; };
+		845F79521FBA0C6900307360 /* RDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79511FBA0C6900307360 /* RDropTests.swift */; };
+		845F796B1FBA11B200307360 /* Rock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F796A1FBA11B200307360 /* Rock.swift */; };
+		845F79721FBA148200307360 /* MyRocksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79711FBA148200307360 /* MyRocksTableViewController.swift */; };
+		845F79741FBA184500307360 /* RockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79731FBA184500307360 /* RockModel.swift */; };
+		845F79C11FBA1EB400307360 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79771FBA1EB400307360 /* DraggableCardView.swift */; };
+		845F79C31FBA1EB400307360 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79791FBA1EB400307360 /* KolodaView.swift */; };
+		845F79C51FBA1EB400307360 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F797B1FBA1EB400307360 /* OverlayView.swift */; };
+		845F79E21FBA218000307360 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79E11FBA218000307360 /* SwipeResultDirection.swift */; };
+		845F79E41FBA219B00307360 /* KolodaViewAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79E31FBA219B00307360 /* KolodaViewAnimatior.swift */; };
+		845F79E61FBA21C600307360 /* KolodaCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79E51FBA21C600307360 /* KolodaCardStorage.swift */; };
+		845F79E91FBA225400307360 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F79E81FBA225400307360 /* SwipeViewController.swift */; };
+		8463D0711FD5BEDE009438C6 /* UIViewcontroller+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463D0701FD5BEDE009438C6 /* UIViewcontroller+Validation.swift */; };
+		8463D0731FD5BF23009438C6 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463D0721FD5BF23009438C6 /* CLLocationExtensions.swift */; };
+		8463D0751FD5C426009438C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8463D0741FD5C426009438C6 /* GoogleService-Info.plist */; };
+		8485F69F1FBF3DF9006026FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485F69E1FBF3DF9006026FB /* LoginViewController.swift */; };
+		8485F6A51FBF47F0006026FB /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485F6A41FBF47F0006026FB /* UIColor+Helper.swift */; };
+		8485F6A71FBF49A9006026FB /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485F6A61FBF49A9006026FB /* SignupViewController.swift */; };
+		84959D171FBCDCE300EDCB2E /* RockDropLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84959D161FBCDCE300EDCB2E /* RockDropLabel.swift */; };
+		8496A5981FBCD9FA00C90CD1 /* RockDropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496A5971FBCD9FA00C90CD1 /* RockDropButton.swift */; };
+		84BDB7451FC09015000019B4 /* RockDropBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDB7441FC09015000019B4 /* RockDropBarButtonItem.swift */; };
+		84BDB7471FC09186000019B4 /* NewRockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDB7461FC09186000019B4 /* NewRockViewController.swift */; };
+		84BDB7491FC096DC000019B4 /* RockDropTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDB7481FC096DC000019B4 /* RockDropTextField.swift */; };
+		84BDB74B1FC0AE7C000019B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BDB74A1FC0AE7C000019B4 /* CoreLocation.framework */; };
+		84E0929E1FCF0DAF00ED3AAE /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0929D1FCF0DAF00ED3AAE /* CustomKolodaView.swift */; };
+		84E714911FC35B3A00385474 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E714901FC35B3A00385474 /* LeaderboardTableViewController.swift */; };
+		9E60E7D337862C91D0C6AD86 /* Pods_RDropTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3A75E457A527ACF60AFB05 /* Pods_RDropTests.framework */; };
+		BC3CECF8E7C11E0946141588 /* Pods_RDropUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1097FB6EA59D89F23B2BE65B /* Pods_RDropUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		845F794E1FBA0C6900307360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845F79311FBA0C6900307360 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845F79381FBA0C6900307360;
+			remoteInfo = RDrop;
+		};
+		845F79591FBA0C6900307360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845F79311FBA0C6900307360 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845F79381FBA0C6900307360;
+			remoteInfo = RDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0773C6331FDDDD0E003F361A /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0774BCC11FDDE6AC00B9BF3B /* RockDropClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockDropClearButton.swift; sourceTree = "<group>"; };
+		0774BCC41FDDEADE00B9BF3B /* DINPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.ttf"; sourceTree = "<group>"; };
+		0774BCC51FDDEADF00B9BF3B /* DINPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.ttf"; sourceTree = "<group>"; };
+		07E4C77D1FDE102200F4914D /* RockDropPlainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockDropPlainTextField.swift; sourceTree = "<group>"; };
+		07E4C7811FDEE41B00F4914D /* RockDropTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockDropTabBarController.swift; sourceTree = "<group>"; };
+		07E4C7831FDEE8A900F4914D /* RockDropNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockDropNavController.swift; sourceTree = "<group>"; };
+		07E4C7891FDF113F00F4914D /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		0FD20622F65BCA6CBD4BAB7E /* Pods-RDropTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDropTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RDropTests/Pods-RDropTests.release.xcconfig"; sourceTree = "<group>"; };
+		1097FB6EA59D89F23B2BE65B /* Pods_RDropUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDropUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CF649B22C5A6C38DC70398 /* Pods-RDropUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDropUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDropUITests/Pods-RDropUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C73AA38A40B953E533A072F /* Pods-RDropUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDropUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RDropUITests/Pods-RDropUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D23F26B0A4BD9BF2AE2109F /* Pods-RDropTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDropTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDropTests/Pods-RDropTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F3A75E457A527ACF60AFB05 /* Pods_RDropTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDropTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8404ED651FCC7458003B00A4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8404ED671FCCEE75003B00A4 /* darksky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = darksky.swift; sourceTree = "<group>"; };
+		8454BFCC1FD9B65700C1D95C /* RockCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockCellTableViewCell.swift; sourceTree = "<group>"; };
+		8454BFD01FD9EFB700C1D95C /* GradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		8454BFD21FD9F15500C1D95C /* GradientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTableViewController.swift; sourceTree = "<group>"; };
+		845F79391FBA0C6900307360 /* RDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845F793C1FBA0C6900307360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		845F79411FBA0C6900307360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845F79431FBA0C6900307360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845F79461FBA0C6900307360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845F794D1FBA0C6900307360 /* RDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845F79511FBA0C6900307360 /* RDropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDropTests.swift; sourceTree = "<group>"; };
+		845F79531FBA0C6900307360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RDropTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		845F79581FBA0C6900307360 /* RDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845F796A1FBA11B200307360 /* Rock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rock.swift; sourceTree = "<group>"; };
+		845F79711FBA148200307360 /* MyRocksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRocksTableViewController.swift; sourceTree = "<group>"; };
+		845F79731FBA184500307360 /* RockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockModel.swift; sourceTree = "<group>"; };
+		845F79771FBA1EB400307360 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggableCardView.swift; path = ../Pods/Koloda/Pod/Classes/KolodaView/DraggableCardView/DraggableCardView.swift; sourceTree = "<group>"; };
+		845F79791FBA1EB400307360 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KolodaView.swift; path = ../Pods/Koloda/Pod/Classes/KolodaView/KolodaView.swift; sourceTree = "<group>"; };
+		845F797B1FBA1EB400307360 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverlayView.swift; path = ../Pods/Koloda/Pod/Classes/KolodaView/OverlayView/OverlayView.swift; sourceTree = "<group>"; };
+		845F79E11FBA218000307360 /* SwipeResultDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeResultDirection.swift; path = ../Pods/Koloda/Pod/Classes/KolodaView/SwipeResultDirection.swift; sourceTree = "<group>"; };
+		845F79E31FBA219B00307360 /* KolodaViewAnimatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KolodaViewAnimatior.swift; path = ../Pods/Koloda/Pod/Classes/KolodaView/KolodaViewAnimatior.swift; sourceTree = "<group>"; };
+		845F79E51FBA21C600307360 /* KolodaCardStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KolodaCardStorage.swift; path = ../Pods/Koloda/Pod/Classes/KolodaView/KolodaCardStorage.swift; sourceTree = "<group>"; };
+		845F79E81FBA225400307360 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		8463D0701FD5BEDE009438C6 /* UIViewcontroller+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+Validation.swift"; sourceTree = "<group>"; };
+		8463D0721FD5BF23009438C6 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
+		8463D0741FD5C426009438C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8485F69E1FBF3DF9006026FB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8485F6A41FBF47F0006026FB /* UIColor+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Helper.swift"; path = "../Pods/UIColor+Helper.swift"; sourceTree = "<group>"; };
+		8485F6A61FBF49A9006026FB /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		84959D161FBCDCE300EDCB2E /* RockDropLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockDropLabel.swift; sourceTree = "<group>"; };
+		8496A5971FBCD9FA00C90CD1 /* RockDropButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockDropButton.swift; sourceTree = "<group>"; };
+		84BDB7441FC09015000019B4 /* RockDropBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockDropBarButtonItem.swift; sourceTree = "<group>"; };
+		84BDB7461FC09186000019B4 /* NewRockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRockViewController.swift; sourceTree = "<group>"; };
+		84BDB7481FC096DC000019B4 /* RockDropTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockDropTextField.swift; sourceTree = "<group>"; };
+		84BDB74A1FC0AE7C000019B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		84E0929D1FCF0DAF00ED3AAE /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomKolodaView.swift; path = ../CustomKolodaView.swift; sourceTree = "<group>"; };
+		84E714901FC35B3A00385474 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
+		B47B1EC1E6C414E77EAC232A /* Pods_RDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D9B495929A328CF19AA100 /* Pods-RDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDrop.release.xcconfig"; path = "Pods/Target Support Files/Pods-RDrop/Pods-RDrop.release.xcconfig"; sourceTree = "<group>"; };
+		FC717F47A5535C8FBE35150A /* Pods-RDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDrop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDrop/Pods-RDrop.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845F79361FBA0C6900307360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BDB74B1FC0AE7C000019B4 /* CoreLocation.framework in Frameworks */,
+				68B97548B91EDAD70C3AAFFD /* Pods_RDrop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845F794A1FBA0C6900307360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E60E7D337862C91D0C6AD86 /* Pods_RDropTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845F79551FBA0C6900307360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3CECF8E7C11E0946141588 /* Pods_RDropUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0774BCC31FDDEA5900B9BF3B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0774BCC41FDDEADE00B9BF3B /* DINPro-Medium.ttf */,
+				0774BCC51FDDEADF00B9BF3B /* DINPro-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		845F79301FBA0C6900307360 = {
+			isa = PBXGroup;
+			children = (
+				845F793B1FBA0C6900307360 /* RDrop */,
+				845F79501FBA0C6900307360 /* RDropTests */,
+				845F793A1FBA0C6900307360 /* Products */,
+				D9072B7F70693AC1D5F9BCEF /* Pods */,
+				97A67EF5796234323F296602 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		845F793A1FBA0C6900307360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845F79391FBA0C6900307360 /* RDrop.app */,
+				845F794D1FBA0C6900307360 /* RDropTests.xctest */,
+				845F79581FBA0C6900307360 /* RDropUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845F793B1FBA0C6900307360 /* RDrop */ = {
+			isa = PBXGroup;
+			children = (
+				845F793C1FBA0C6900307360 /* AppDelegate.swift */,
+				845F79701FBA137900307360 /* utilities */,
+				845F796C1FBA135E00307360 /* models */,
+				845F796E1FBA136A00307360 /* controllers */,
+				845F796D1FBA136300307360 /* views */,
+			);
+			path = RDrop;
+			sourceTree = "<group>";
+		};
+		845F79501FBA0C6900307360 /* RDropTests */ = {
+			isa = PBXGroup;
+			children = (
+				845F79511FBA0C6900307360 /* RDropTests.swift */,
+			);
+			path = RDropTests;
+			sourceTree = "<group>";
+		};
+		845F796C1FBA135E00307360 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				845F796A1FBA11B200307360 /* Rock.swift */,
+				845F79731FBA184500307360 /* RockModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		845F796D1FBA136300307360 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0773C6331FDDDD0E003F361A /* GradientView.swift */,
+				84BDB7481FC096DC000019B4 /* RockDropTextField.swift */,
+				07E4C77D1FDE102200F4914D /* RockDropPlainTextField.swift */,
+				8454BFCC1FD9B65700C1D95C /* RockCellTableViewCell.swift */,
+				84E0929D1FCF0DAF00ED3AAE /* CustomKolodaView.swift */,
+				8496A5971FBCD9FA00C90CD1 /* RockDropButton.swift */,
+				0774BCC11FDDE6AC00B9BF3B /* RockDropClearButton.swift */,
+				84959D161FBCDCE300EDCB2E /* RockDropLabel.swift */,
+				84BDB7441FC09015000019B4 /* RockDropBarButtonItem.swift */,
+				845F79401FBA0C6900307360 /* Main.storyboard */,
+				845F79451FBA0C6900307360 /* LaunchScreen.storyboard */,
+				845F79431FBA0C6900307360 /* Assets.xcassets */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		845F796E1FBA136A00307360 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8404ED651FCC7458003B00A4 /* MapViewController.swift */,
+				84E714901FC35B3A00385474 /* LeaderboardTableViewController.swift */,
+				845F79E81FBA225400307360 /* SwipeViewController.swift */,
+				845F79711FBA148200307360 /* MyRocksTableViewController.swift */,
+				84BDB7461FC09186000019B4 /* NewRockViewController.swift */,
+				8485F69E1FBF3DF9006026FB /* LoginViewController.swift */,
+				8485F6A61FBF49A9006026FB /* SignupViewController.swift */,
+				07E4C7831FDEE8A900F4914D /* RockDropNavController.swift */,
+				07E4C7811FDEE41B00F4914D /* RockDropTabBarController.swift */,
+				8454BFD21FD9F15500C1D95C /* GradientTableViewController.swift */,
+				8454BFD01FD9EFB700C1D95C /* GradientViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		845F79701FBA137900307360 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0774BCC31FDDEA5900B9BF3B /* fonts */,
+				8404ED671FCCEE75003B00A4 /* darksky.swift */,
+				8485F6A41FBF47F0006026FB /* UIColor+Helper.swift */,
+				8463D0721FD5BF23009438C6 /* CLLocationExtensions.swift */,
+				8463D0701FD5BEDE009438C6 /* UIViewcontroller+Validation.swift */,
+				8463D0741FD5C426009438C6 /* GoogleService-Info.plist */,
+				845F79531FBA0C6900307360 /* Info.plist */,
+			);
+			name = utilities;
+			sourceTree = "<group>";
+		};
+		845F79E71FBA21E800307360 /* koloda */ = {
+			isa = PBXGroup;
+			children = (
+				845F797B1FBA1EB400307360 /* OverlayView.swift */,
+				845F79E11FBA218000307360 /* SwipeResultDirection.swift */,
+				845F79E31FBA219B00307360 /* KolodaViewAnimatior.swift */,
+				845F79E51FBA21C600307360 /* KolodaCardStorage.swift */,
+				845F79771FBA1EB400307360 /* DraggableCardView.swift */,
+				845F79791FBA1EB400307360 /* KolodaView.swift */,
+			);
+			name = koloda;
+			path = RDrop;
+			sourceTree = "<group>";
+		};
+		97A67EF5796234323F296602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E4C7891FDF113F00F4914D /* GoogleMaps.bundle */,
+				84BDB74A1FC0AE7C000019B4 /* CoreLocation.framework */,
+				B47B1EC1E6C414E77EAC232A /* Pods_RDrop.framework */,
+				5F3A75E457A527ACF60AFB05 /* Pods_RDropTests.framework */,
+				1097FB6EA59D89F23B2BE65B /* Pods_RDropUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9072B7F70693AC1D5F9BCEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				845F79E71FBA21E800307360 /* koloda */,
+				FC717F47A5535C8FBE35150A /* Pods-RDrop.debug.xcconfig */,
+				D5D9B495929A328CF19AA100 /* Pods-RDrop.release.xcconfig */,
+				2D23F26B0A4BD9BF2AE2109F /* Pods-RDropTests.debug.xcconfig */,
+				0FD20622F65BCA6CBD4BAB7E /* Pods-RDropTests.release.xcconfig */,
+				14CF649B22C5A6C38DC70398 /* Pods-RDropUITests.debug.xcconfig */,
+				1C73AA38A40B953E533A072F /* Pods-RDropUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845F79381FBA0C6900307360 /* RDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845F79611FBA0C6900307360 /* Build configuration list for PBXNativeTarget "RDrop" */;
+			buildPhases = (
+				AD05413C57F8DBB5F5A876AC /* [CP] Check Pods Manifest.lock */,
+				845F79351FBA0C6900307360 /* Sources */,
+				845F79361FBA0C6900307360 /* Frameworks */,
+				845F79371FBA0C6900307360 /* Resources */,
+				DD6B7375200B9B8E4133794F /* [CP] Embed Pods Frameworks */,
+				2C4683F65C5ABF0B6852CEE5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDrop;
+			productName = RDrop;
+			productReference = 845F79391FBA0C6900307360 /* RDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		845F794C1FBA0C6900307360 /* RDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845F79641FBA0C6900307360 /* Build configuration list for PBXNativeTarget "RDropTests" */;
+			buildPhases = (
+				AF68C5E0294BC3A65C6FA4AE /* [CP] Check Pods Manifest.lock */,
+				845F79491FBA0C6900307360 /* Sources */,
+				845F794A1FBA0C6900307360 /* Frameworks */,
+				845F794B1FBA0C6900307360 /* Resources */,
+				1E5BB5918D5BEF36CFAEDBA7 /* [CP] Embed Pods Frameworks */,
+				698C88589FB0C87F481F8C60 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845F794F1FBA0C6900307360 /* PBXTargetDependency */,
+			);
+			name = RDropTests;
+			productName = RDropTests;
+			productReference = 845F794D1FBA0C6900307360 /* RDropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		845F79571FBA0C6900307360 /* RDropUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845F79671FBA0C6900307360 /* Build configuration list for PBXNativeTarget "RDropUITests" */;
+			buildPhases = (
+				8B81877EA1FC09B860DD166B /* [CP] Check Pods Manifest.lock */,
+				845F79541FBA0C6900307360 /* Sources */,
+				845F79551FBA0C6900307360 /* Frameworks */,
+				845F79561FBA0C6900307360 /* Resources */,
+				DEDD03F290ED9B62859B6508 /* [CP] Embed Pods Frameworks */,
+				52B8757DF1281A73BDAD62AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845F795A1FBA0C6900307360 /* PBXTargetDependency */,
+			);
+			name = RDropUITests;
+			productName = RDropUITests;
+			productReference = 845F79581FBA0C6900307360 /* RDropUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845F79311FBA0C6900307360 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = baileyth;
+				TargetAttributes = {
+					845F79381FBA0C6900307360 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K452FDK8DD;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					845F794C1FBA0C6900307360 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 845F79381FBA0C6900307360;
+					};
+					845F79571FBA0C6900307360 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 845F79381FBA0C6900307360;
+					};
+				};
+			};
+			buildConfigurationList = 845F79341FBA0C6900307360 /* Build configuration list for PBXProject "RDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845F79301FBA0C6900307360;
+			productRefGroup = 845F793A1FBA0C6900307360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845F79381FBA0C6900307360 /* RDrop */,
+				845F794C1FBA0C6900307360 /* RDropTests */,
+				845F79571FBA0C6900307360 /* RDropUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845F79371FBA0C6900307360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E4C78A1FDF113F00F4914D /* GoogleMaps.bundle in Resources */,
+				0774BCC61FDDEB9A00B9BF3B /* DINPro-Medium.ttf in Resources */,
+				0774BCC71FDDEB9A00B9BF3B /* DINPro-Regular.ttf in Resources */,
+				845F79471FBA0C6900307360 /* LaunchScreen.storyboard in Resources */,
+				8463D0751FD5C426009438C6 /* GoogleService-Info.plist in Resources */,
+				845F79441FBA0C6900307360 /* Assets.xcassets in Resources */,
+				845F79421FBA0C6900307360 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845F794B1FBA0C6900307360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845F79561FBA0C6900307360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E5BB5918D5BEF36CFAEDBA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RDropTests/Pods-RDropTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C4683F65C5ABF0B6852CEE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RDrop/Pods-RDrop-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RDrop/Pods-RDrop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B8757DF1281A73BDAD62AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RDropUITests/Pods-RDropUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		698C88589FB0C87F481F8C60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RDropTests/Pods-RDropTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B81877EA1FC09B860DD166B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RDropUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD05413C57F8DBB5F5A876AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RDrop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF68C5E0294BC3A65C6FA4AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RDropTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6B7375200B9B8E4133794F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RDrop/Pods-RDrop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RDrop/Pods-RDrop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEDD03F290ED9B62859B6508 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RDropUITests/Pods-RDropUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845F79351FBA0C6900307360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BDB7451FC09015000019B4 /* RockDropBarButtonItem.swift in Sources */,
+				8485F69F1FBF3DF9006026FB /* LoginViewController.swift in Sources */,
+				845F79721FBA148200307360 /* MyRocksTableViewController.swift in Sources */,
+				845F796B1FBA11B200307360 /* Rock.swift in Sources */,
+				845F79C51FBA1EB400307360 /* OverlayView.swift in Sources */,
+				8463D0731FD5BF23009438C6 /* CLLocationExtensions.swift in Sources */,
+				845F79E41FBA219B00307360 /* KolodaViewAnimatior.swift in Sources */,
+				845F79C11FBA1EB400307360 /* DraggableCardView.swift in Sources */,
+				8404ED661FCC7458003B00A4 /* MapViewController.swift in Sources */,
+				8485F6A51FBF47F0006026FB /* UIColor+Helper.swift in Sources */,
+				845F79C31FBA1EB400307360 /* KolodaView.swift in Sources */,
+				8454BFD31FD9F15500C1D95C /* GradientTableViewController.swift in Sources */,
+				845F79741FBA184500307360 /* RockModel.swift in Sources */,
+				07E4C7821FDEE41B00F4914D /* RockDropTabBarController.swift in Sources */,
+				8454BFCD1FD9B65700C1D95C /* RockCellTableViewCell.swift in Sources */,
+				84E0929E1FCF0DAF00ED3AAE /* CustomKolodaView.swift in Sources */,
+				845F79E21FBA218000307360 /* SwipeResultDirection.swift in Sources */,
+				8463D0711FD5BEDE009438C6 /* UIViewcontroller+Validation.swift in Sources */,
+				84E714911FC35B3A00385474 /* LeaderboardTableViewController.swift in Sources */,
+				8485F6A71FBF49A9006026FB /* SignupViewController.swift in Sources */,
+				0774BCC21FDDE6AC00B9BF3B /* RockDropClearButton.swift in Sources */,
+				845F79E61FBA21C600307360 /* KolodaCardStorage.swift in Sources */,
+				8404ED681FCCEE75003B00A4 /* darksky.swift in Sources */,
+				845F793D1FBA0C6900307360 /* AppDelegate.swift in Sources */,
+				07E4C77E1FDE102200F4914D /* RockDropPlainTextField.swift in Sources */,
+				84BDB7491FC096DC000019B4 /* RockDropTextField.swift in Sources */,
+				84BDB7471FC09186000019B4 /* NewRockViewController.swift in Sources */,
+				8454BFD11FD9EFB700C1D95C /* GradientViewController.swift in Sources */,
+				845F79E91FBA225400307360 /* SwipeViewController.swift in Sources */,
+				0773C6341FDDDD0E003F361A /* GradientView.swift in Sources */,
+				07E4C7841FDEE8A900F4914D /* RockDropNavController.swift in Sources */,
+				8496A5981FBCD9FA00C90CD1 /* RockDropButton.swift in Sources */,
+				84959D171FBCDCE300EDCB2E /* RockDropLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845F79491FBA0C6900307360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845F79521FBA0C6900307360 /* RDropTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845F79541FBA0C6900307360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		845F794F1FBA0C6900307360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845F79381FBA0C6900307360 /* RDrop */;
+			targetProxy = 845F794E1FBA0C6900307360 /* PBXContainerItemProxy */;
+		};
+		845F795A1FBA0C6900307360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845F79381FBA0C6900307360 /* RDrop */;
+			targetProxy = 845F79591FBA0C6900307360 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		845F79401FBA0C6900307360 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845F79411FBA0C6900307360 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		845F79451FBA0C6900307360 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845F79461FBA0C6900307360 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845F795F1FBA0C6900307360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		845F79601FBA0C6900307360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845F79621FBA0C6900307360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC717F47A5535C8FBE35150A /* Pods-RDrop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K452FDK8DD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CIS-357.RDrop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		845F79631FBA0C6900307360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D9B495929A328CF19AA100 /* Pods-RDrop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K452FDK8DD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CIS-357.RDrop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		845F79651FBA0C6900307360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D23F26B0A4BD9BF2AE2109F /* Pods-RDropTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RDropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CIS-357.RDropTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RDrop.app/RDrop";
+			};
+			name = Debug;
+		};
+		845F79661FBA0C6900307360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD20622F65BCA6CBD4BAB7E /* Pods-RDropTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RDropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CIS-357.RDropTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RDrop.app/RDrop";
+			};
+			name = Release;
+		};
+		845F79681FBA0C6900307360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CF649B22C5A6C38DC70398 /* Pods-RDropUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RDropUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CIS-357.RDropUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RDrop;
+			};
+			name = Debug;
+		};
+		845F79691FBA0C6900307360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C73AA38A40B953E533A072F /* Pods-RDropUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RDropUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CIS-357.RDropUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RDrop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845F79341FBA0C6900307360 /* Build configuration list for PBXProject "RDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845F795F1FBA0C6900307360 /* Debug */,
+				845F79601FBA0C6900307360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845F79611FBA0C6900307360 /* Build configuration list for PBXNativeTarget "RDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845F79621FBA0C6900307360 /* Debug */,
+				845F79631FBA0C6900307360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845F79641FBA0C6900307360 /* Build configuration list for PBXNativeTarget "RDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845F79651FBA0C6900307360 /* Debug */,
+				845F79661FBA0C6900307360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845F79671FBA0C6900307360 /* Build configuration list for PBXNativeTarget "RDropUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845F79681FBA0C6900307360 /* Debug */,
+				845F79691FBA0C6900307360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 845F79311FBA0C6900307360 /* Project object */;
+}

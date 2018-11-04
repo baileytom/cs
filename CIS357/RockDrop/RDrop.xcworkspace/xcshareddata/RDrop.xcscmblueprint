@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2F5D94376880F2AD0BD83079C970E72965B0E494",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BFD6BEE068436EE0228B4388EBBE53466A0320F2" : 9223372036854775807,
+    "B2DE4515AA2677CA887B9641E8448196AFB42D4B" : 9223372036854775807,
+    "2F5D94376880F2AD0BD83079C970E72965B0E494" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0F9EB6A9-4FB6-4983-95AF-DB9CCAF7F056",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BFD6BEE068436EE0228B4388EBBE53466A0320F2" : "Traxy\/",
+    "B2DE4515AA2677CA887B9641E8448196AFB42D4B" : "ic-hw11\/GeoCalculator\/",
+    "2F5D94376880F2AD0BD83079C970E72965B0E494" : "RDropFinal\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RDrop",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RDrop.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/baileytom\/RDrop",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2F5D94376880F2AD0BD83079C970E72965B0E494"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/baileytom\/Mobile-Development-HW12",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2DE4515AA2677CA887B9641E8448196AFB42D4B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jengelsma\/TraxyApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFD6BEE068436EE0228B4388EBBE53466A0320F2"
+    }
+  ]
+}

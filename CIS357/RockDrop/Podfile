@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'RDrop' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for RDrop
+
+  pod 'Koloda'
+  pod 'Firebase/Database'
+  pod 'FirebaseAuth'
+  pod 'GoogleMaps'
+
+  target 'RDropTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'RDropUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

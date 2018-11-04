@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.ttf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.ttf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="RDrop" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RockDrop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQu-6m-Dp6">
+                                <rect key="frame" x="36" y="84" width="303" height="52.666666666666657"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="45"/>
+                                <color key="textColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="rock_image" translatesAutoresizingMaskIntoConstraints="NO" id="830-O5-ZG0">
+                                <rect key="frame" x="112.66666666666669" y="176.66666666666666" width="150" height="109.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0DP-oC-X7X"/>
+                                    <constraint firstAttribute="height" constant="110" id="kZ0-lu-AcB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="me8-8b-h0T">
+                                <rect key="frame" x="26" y="346.66666666666669" width="323" height="149.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="efC-ub-UaF">
+                                        <rect key="frame" x="44.000000000000014" y="0.0" width="235.33333333333337" height="15.333333333333334"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qj-lk-GVv">
+                                                <rect key="frame" x="0.0" y="7" width="50" height="1"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="5Eo-LK-g07"/>
+                                                    <constraint firstAttribute="height" constant="1" id="aWW-3D-wQJ"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXISTING ACCOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noS-WH-lRv">
+                                                <rect key="frame" x="59.999999999999993" y="0.66666666666662877" width="115.33333333333331" height="14"/>
+                                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="12"/>
+                                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlJ-DI-wdO">
+                                                <rect key="frame" x="185.33333333333334" y="7" width="50" height="1"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Dxi-ZJ-urd"/>
+                                                    <constraint firstAttribute="height" constant="1" id="sLJ-du-7lF"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uya-ks-rfX" customClass="RockDropPlainTextField" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="27.333333333333314" width="293" height="31.666666666666671"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Up4-Ss-qS7" customClass="RockDropPlainTextField" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="71" width="293" height="31.666666666666671"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-kP-uPD" customClass="RockDropClearButton" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="91.666666666666686" y="114.66666666666663" width="140" height="35"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="Mfz-2C-lQh"/>
+                                            <constraint firstAttribute="height" constant="35" id="q3r-Cc-oQ4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="16"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Imp-Z7-DNT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Up4-Ss-qS7" secondAttribute="trailing" constant="15" id="LHm-la-eaD"/>
+                                    <constraint firstAttribute="trailing" secondItem="uya-ks-rfX" secondAttribute="trailing" constant="15" id="ayw-Aj-5eX"/>
+                                    <constraint firstItem="uya-ks-rfX" firstAttribute="leading" secondItem="me8-8b-h0T" secondAttribute="leading" constant="15" id="xkz-wt-MMp"/>
+                                    <constraint firstItem="Up4-Ss-qS7" firstAttribute="leading" secondItem="me8-8b-h0T" secondAttribute="leading" constant="15" id="yL1-Fm-peO"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igP-PO-WPc" customClass="RockDropClearButton" customModule="RDrop" customModuleProvider="target">
+                                <rect key="frame" x="137.66666666666666" y="733" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.40000000000000002" blue="0.43529411764705883" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MEX-vL-u4m"/>
+                                    <constraint firstAttribute="width" constant="100" id="oyk-9c-oSD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="16"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="L5R-2t-FK3" kind="show" animates="NO" id="Ebz-vu-Kc1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T HAVE AN ACCOUNT?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpI-yg-EDs">
+                                <rect key="frame" x="26" y="711" width="323" height="14"/>
+                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="12"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="igP-PO-WPc" secondAttribute="bottom" constant="10" id="15y-Da-lJX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bpI-yg-EDs" secondAttribute="trailing" constant="10" id="Nmr-eG-mIh"/>
+                            <constraint firstItem="igP-PO-WPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QWa-Nl-N49"/>
+                            <constraint firstItem="me8-8b-h0T" firstAttribute="top" secondItem="830-O5-ZG0" secondAttribute="bottom" constant="60" id="Tc2-v6-EZf"/>
+                            <constraint firstItem="igP-PO-WPc" firstAttribute="top" secondItem="bpI-yg-EDs" secondAttribute="bottom" constant="8" id="UGJ-ZD-3OF"/>
+                            <constraint firstItem="SQu-6m-Dp6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="d4v-9n-xTt"/>
+                            <constraint firstItem="SQu-6m-Dp6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="eyd-Lj-MnS"/>
+                            <constraint firstItem="830-O5-ZG0" firstAttribute="top" secondItem="SQu-6m-Dp6" secondAttribute="bottom" constant="40" id="fjq-9c-gPy"/>
+                            <constraint firstItem="me8-8b-h0T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="hRt-0H-u72"/>
+                            <constraint firstItem="830-O5-ZG0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lWe-uJ-Is7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="me8-8b-h0T" secondAttribute="trailing" constant="10" id="t7B-6b-uDc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SQu-6m-Dp6" secondAttribute="trailing" constant="20" id="yKK-pC-O4r"/>
+                            <constraint firstItem="bpI-yg-EDs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="zcF-cH-Jw0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowX">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="uya-ks-rfX" id="XXx-Zv-3R0"/>
+                        <outlet property="passwordField" destination="Up4-Ss-qS7" id="3Dv-Hu-WKD"/>
+                        <segue destination="J8T-TT-OBl" kind="show" identifier="segueToMain" animates="NO" id="rbh-GA-7D6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="205.54722638680661"/>
+        </scene>
+        <!--Nearby Rocks-->
+        <scene sceneID="hNj-F9-7eL">
+            <objects>
+                <viewController id="OWd-uN-sQH" customClass="SwipeViewController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fvf-Mc-cvU"/>
+                        <viewControllerLayoutGuide type="bottom" id="nwm-Df-uZh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bku-QN-tLK" customClass="CustomKolodaView" customModule="RDrop" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nearby Rocks" image="nearbye" id="DrG-YP-Bqw"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="bku-QN-tLK" id="dFq-T7-acU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzV-IQ-MaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2745" y="207"/>
+        </scene>
+        <!--Rock Drop Tab Bar Controller-->
+        <scene sceneID="1Gl-CZ-PSp">
+            <objects>
+                <tabBarController id="qXX-qR-Psx" customClass="RockDropTabBarController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lk0-JY-EWf">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bXP-KR-to1">
+                            <color key="tintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Rock" id="vfc-sA-1o4" customClass="RockDropBarButtonItem" customModule="RDrop" customModuleProvider="target">
+                            <color key="tintColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" itemPositioning="centered" id="MTL-K2-kbf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="1" blue="1" alpha="0.80592358730000002" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="navBar" destination="Lk0-JY-EWf" id="OqY-OA-lNQ"/>
+                        <segue destination="OWd-uN-sQH" kind="relationship" relationship="viewControllers" id="ITS-Ik-mAM"/>
+                        <segue destination="NuM-Z9-pK2" kind="relationship" relationship="viewControllers" id="GWR-1d-3zg"/>
+                        <segue destination="Nr8-b4-jcj" kind="relationship" relationship="viewControllers" id="9P0-41-Ezo"/>
+                        <segue destination="i2l-y1-4gk" kind="relationship" relationship="viewControllers" id="3o8-OY-70E"/>
+                        <segue destination="kxO-NY-PJs" kind="show" identifier="newRock" id="hjh-Fp-dsH"/>
+                        <segue destination="Xe1-CI-LzF" kind="unwind" identifier="logout" unwindAction="logoutWithSegue:" id="F0I-Y8-5Za"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpc-LO-O92" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Xe1-CI-LzF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="207"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="6Rg-Tw-yxO">
+            <objects>
+                <viewController id="Nr8-b4-jcj" customClass="MapViewController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iaO-gA-lfh"/>
+                        <viewControllerLayoutGuide type="bottom" id="uG8-3c-n1Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fu0-ov-mMB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="J8v-Mh-1Lx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYL-zH-hRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2737" y="1003"/>
+        </scene>
+        <!--New Rock-->
+        <scene sceneID="Rv6-X1-x8s">
+            <objects>
+                <viewController title="New Rock" id="kxO-NY-PJs" customClass="NewRockViewController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dHJ-r7-72L"/>
+                        <viewControllerLayoutGuide type="bottom" id="pPK-eG-SBx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5OY-P8-ynX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39l-kV-kPi" customClass="GradientView" customModule="RDrop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryI-aW-sNz">
+                                        <rect key="frame" x="143" y="150" width="60" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="aha-jj-67v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yra-kc-gjZ">
+                                        <rect key="frame" x="213" y="150" width="9" height="20"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="17"/>
+                                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swI-RC-FUY">
+                                        <rect key="frame" x="50" y="192" width="275" height="25"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="0H4-Le-Ebc"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER A DESCRIPTION OF YOUR NEW ROCK BELOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-VX-V9x">
+                                        <rect key="frame" x="36.333333333333343" y="239" width="302.33333333333326" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="dxP-Wf-F2F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="12"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NKx-8J-fmz">
+                                        <rect key="frame" x="20" y="269" width="335" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="4f6-QE-vvs"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eft-VR-ifg" customClass="RockDropClearButton" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="147" y="693" width="80" height="28"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Bfs-k3-Yyp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="13"/>
+                                        <state key="normal" title="GO BACK">
+                                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goBackBtnPressed:" destination="kxO-NY-PJs" eventType="touchUpInside" id="gzr-an-P6E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc2-da-dYx" customClass="RockDropClearButton" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="112.66666666666669" y="391" width="150" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="CYc-DG-okF"/>
+                                            <constraint firstAttribute="width" constant="150" id="eYY-g4-duO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="15"/>
+                                        <state key="normal" title="CREATE ROCK">
+                                            <color key="titleColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createRockButtonPressed:" destination="kxO-NY-PJs" eventType="touchUpInside" id="BIu-Pc-MuJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ryI-aW-sNz" firstAttribute="top" secondItem="39l-kV-kPi" secondAttribute="top" constant="150" id="2Za-VL-PCU"/>
+                                    <constraint firstItem="NKx-8J-fmz" firstAttribute="leading" secondItem="39l-kV-kPi" secondAttribute="leading" constant="20" id="32N-Fn-mvf"/>
+                                    <constraint firstItem="ryI-aW-sNz" firstAttribute="centerX" secondItem="39l-kV-kPi" secondAttribute="centerX" constant="-15" id="DnZ-XA-vfy"/>
+                                    <constraint firstItem="Yra-kc-gjZ" firstAttribute="leading" secondItem="ryI-aW-sNz" secondAttribute="trailing" constant="10" id="Gei-1O-c9i"/>
+                                    <constraint firstItem="Hc2-da-dYx" firstAttribute="top" secondItem="NKx-8J-fmz" secondAttribute="bottom" constant="22" id="QHf-Iq-T7i"/>
+                                    <constraint firstItem="NKx-8J-fmz" firstAttribute="centerX" secondItem="Eft-VR-ifg" secondAttribute="centerX" id="USl-G4-Fyh"/>
+                                    <constraint firstItem="Yra-kc-gjZ" firstAttribute="top" secondItem="39l-kV-kPi" secondAttribute="top" constant="150" id="WcC-uN-sNx"/>
+                                    <constraint firstItem="Hc2-da-dYx" firstAttribute="centerX" secondItem="39l-kV-kPi" secondAttribute="centerX" id="Whw-mf-Euc"/>
+                                    <constraint firstItem="swI-RC-FUY" firstAttribute="leading" secondItem="39l-kV-kPi" secondAttribute="leading" constant="50" id="ZEA-h2-mvx"/>
+                                    <constraint firstAttribute="trailing" secondItem="swI-RC-FUY" secondAttribute="trailing" constant="50" id="bB2-PR-08v"/>
+                                    <constraint firstItem="NKx-8J-fmz" firstAttribute="centerX" secondItem="FUa-VX-V9x" secondAttribute="centerX" id="hNM-mM-w3d"/>
+                                    <constraint firstItem="NKx-8J-fmz" firstAttribute="top" secondItem="FUa-VX-V9x" secondAttribute="bottom" constant="5" id="iab-g2-B1g"/>
+                                    <constraint firstItem="FUa-VX-V9x" firstAttribute="top" secondItem="swI-RC-FUY" secondAttribute="bottom" constant="22" id="iy7-9H-Qy3"/>
+                                    <constraint firstItem="Eft-VR-ifg" firstAttribute="bottom" secondItem="39l-kV-kPi" secondAttribute="bottomMargin" id="jCZ-6N-TBg"/>
+                                    <constraint firstItem="swI-RC-FUY" firstAttribute="top" secondItem="ryI-aW-sNz" secondAttribute="bottom" constant="22" id="nrt-vZ-1Mh"/>
+                                    <constraint firstAttribute="trailing" secondItem="NKx-8J-fmz" secondAttribute="trailing" constant="20" id="xb2-Ly-Zdz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <accessibility key="accessibilityConfiguration" label="Test"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="39l-kV-kPi" secondAttribute="trailing" id="2H0-eU-4Un"/>
+                            <constraint firstItem="39l-kV-kPi" firstAttribute="top" secondItem="5OY-P8-ynX" secondAttribute="top" id="8hZ-gv-rln"/>
+                            <constraint firstAttribute="bottom" secondItem="39l-kV-kPi" secondAttribute="bottom" id="KXv-sq-wIo"/>
+                            <constraint firstItem="39l-kV-kPi" firstAttribute="leading" secondItem="5OY-P8-ynX" secondAttribute="leading" id="anE-Um-GOh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="descTextView" destination="NKx-8J-fmz" id="E3V-4X-EeZ"/>
+                        <outlet property="nameTextField" destination="swI-RC-FUY" id="zcb-vM-cgk"/>
+                        <outlet property="pointsLabel" destination="Yra-kc-gjZ" id="pKh-bs-DFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2b-LE-UW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.60000000000002" y="1001.9704433497537"/>
+        </scene>
+        <!--My Rocks-->
+        <scene sceneID="I6V-vd-mSY">
+            <objects>
+                <tableViewController title="My Rocks" id="i2l-y1-4gk" customClass="MyRocksTableViewController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7MA-gO-HzU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="M0K-g2-HcL" detailTextLabel="2O3-QR-h2G" style="IBUITableViewCellStyleSubtitle" id="KKK-mm-KvF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KKK-mm-KvF" id="NHZ-bf-LUd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M0K-g2-HcL">
+                                            <rect key="frame" x="16.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2O3-QR-h2G">
+                                            <rect key="frame" x="15.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="i2l-y1-4gk" id="tm1-df-Ij5"/>
+                            <outlet property="delegate" destination="i2l-y1-4gk" id="hIQ-fE-Cnb"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="My Rocks" image="mountain" id="bvt-KV-qum"/>
+                    <navigationItem key="navigationItem" id="eZS-iN-8Tm"/>
+                    <connections>
+                        <outlet property="myRocksTableView" destination="7MA-gO-HzU" id="6Pn-hY-QgP"/>
+                        <outlet property="tableView" destination="7MA-gO-HzU" id="Tiz-gV-OJe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5lS-YW-KtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="1003"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YDz-uG-Jlr">
+            <objects>
+                <navigationController id="J8T-TT-OBl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8Rr-fb-PrR">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qXX-qR-Psx" kind="relationship" relationship="rootViewController" id="TfT-aR-wcd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PgE-Jx-Egs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-568"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="ZaI-I4-1hn">
+            <objects>
+                <viewController id="L5R-2t-FK3" customClass="SignupViewController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lIt-TI-GM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="DZh-tV-jdg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wti-Pz-waQ" customClass="GradientView" customModule="RDrop" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RockDrop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLh-UL-GKh">
+                                <rect key="frame" x="26" y="84" width="323" height="52.666666666666657"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="45"/>
+                                <color key="textColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="rock_image" translatesAutoresizingMaskIntoConstraints="NO" id="IfA-ui-cnQ">
+                                <rect key="frame" x="112.66666666666669" y="176.66666666666666" width="150" height="109.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="PQa-uk-Lyj"/>
+                                    <constraint firstAttribute="width" constant="150" id="tJn-5m-WCT"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="oAn-Oh-Q8R">
+                                <rect key="frame" x="26" y="346.66666666666669" width="323" height="149.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C1f-Vk-Vey">
+                                        <rect key="frame" x="57" y="0.0" width="209" height="15.333333333333334"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dD0-s6-HJG">
+                                                <rect key="frame" x="0.0" y="7" width="50" height="1"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Qvi-dN-BGo"/>
+                                                    <constraint firstAttribute="height" constant="1" id="wnk-P4-PKz"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW ACCOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5le-e7-Pmi">
+                                                <rect key="frame" x="60" y="0.66666666666662877" width="89" height="14"/>
+                                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="12"/>
+                                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw4-Ff-obw">
+                                                <rect key="frame" x="159" y="7" width="50" height="1"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="UD8-Os-UOR"/>
+                                                    <constraint firstAttribute="width" constant="50" id="yzb-Za-sWD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qu7-Pb-Dan" customClass="RockDropPlainTextField" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="27.333333333333314" width="293" height="31.666666666666671"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pYX-J6-kV4" customClass="RockDropPlainTextField" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="71" width="293" height="31.666666666666671"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="757" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyg-uI-lrQ" customClass="RockDropClearButton" customModule="RDrop" customModuleProvider="target">
+                                        <rect key="frame" x="91.666666666666686" y="114.66666666666663" width="140" height="35"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="9Id-He-vdH"/>
+                                            <constraint firstAttribute="height" constant="35" id="Lqq-KD-x4B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="16"/>
+                                        <state key="normal" title="Sign up">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SignupButtonWasPressed:" destination="L5R-2t-FK3" eventType="touchUpInside" id="a16-Nr-2E8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pYX-J6-kV4" firstAttribute="leading" secondItem="oAn-Oh-Q8R" secondAttribute="leading" constant="15" id="8GW-53-Lj6"/>
+                                    <constraint firstAttribute="trailing" secondItem="pYX-J6-kV4" secondAttribute="trailing" constant="15" id="cEy-Zb-vZm"/>
+                                    <constraint firstItem="qu7-Pb-Dan" firstAttribute="leading" secondItem="oAn-Oh-Q8R" secondAttribute="leading" constant="15" id="cwk-mM-gnt"/>
+                                    <constraint firstAttribute="trailing" secondItem="qu7-Pb-Dan" secondAttribute="trailing" constant="15" id="vkT-at-IBz"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwH-DA-smE" customClass="RockDropClearButton" customModule="RDrop" customModuleProvider="target">
+                                <rect key="frame" x="137.66666666666666" y="733" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.40000000000000002" blue="0.43529411764705883" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="RDq-1R-iRk"/>
+                                    <constraint firstAttribute="width" constant="100" id="nR1-CH-rxN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="16"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="L5R-2t-FK3" eventType="touchUpInside" id="sWs-Ee-d9A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALREADY HAVE AN ACCOUNT?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqA-LG-Bnd">
+                                <rect key="frame" x="26" y="711" width="323" height="14"/>
+                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="12"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IfA-ui-cnQ" firstAttribute="top" secondItem="VLh-UL-GKh" secondAttribute="bottom" constant="40" id="1cR-An-YN3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oAn-Oh-Q8R" secondAttribute="trailing" constant="10" id="2cc-BH-iBK"/>
+                            <constraint firstItem="VLh-UL-GKh" firstAttribute="leading" secondItem="wti-Pz-waQ" secondAttribute="leadingMargin" constant="10" id="2hY-Vk-8i1"/>
+                            <constraint firstItem="oAn-Oh-Q8R" firstAttribute="centerX" secondItem="wti-Pz-waQ" secondAttribute="centerX" id="4TJ-OR-XUU"/>
+                            <constraint firstItem="WwH-DA-smE" firstAttribute="centerX" secondItem="wti-Pz-waQ" secondAttribute="centerX" id="5Pn-Gh-Zjs"/>
+                            <constraint firstItem="DZh-tV-jdg" firstAttribute="top" secondItem="WwH-DA-smE" secondAttribute="bottom" constant="10" id="7Mz-gd-lcg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SqA-LG-Bnd" secondAttribute="trailing" constant="10" id="DHz-b6-0Uf"/>
+                            <constraint firstItem="IfA-ui-cnQ" firstAttribute="centerX" secondItem="wti-Pz-waQ" secondAttribute="centerX" id="k3u-eg-9Hi"/>
+                            <constraint firstItem="WwH-DA-smE" firstAttribute="top" secondItem="SqA-LG-Bnd" secondAttribute="bottom" constant="8" id="n1S-ee-jnL"/>
+                            <constraint firstItem="oAn-Oh-Q8R" firstAttribute="top" secondItem="IfA-ui-cnQ" secondAttribute="bottom" constant="60" id="sfM-XF-r8t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VLh-UL-GKh" secondAttribute="trailing" constant="10" id="ska-9B-pEk"/>
+                            <constraint firstItem="SqA-LG-Bnd" firstAttribute="leading" secondItem="wti-Pz-waQ" secondAttribute="leadingMargin" constant="10" id="tZD-1B-6Wd"/>
+                            <constraint firstItem="VLh-UL-GKh" firstAttribute="top" secondItem="lIt-TI-GM9" secondAttribute="bottom" constant="40" id="vmE-Yj-FaV"/>
+                            <constraint firstItem="oAn-Oh-Q8R" firstAttribute="leading" secondItem="wti-Pz-waQ" secondAttribute="leadingMargin" constant="10" id="wMO-xu-vEt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="qu7-Pb-Dan" id="6eI-3H-prj"/>
+                        <outlet property="passwordField" destination="pYX-J6-kV4" id="H93-YV-8xD"/>
+                        <segue destination="J8T-TT-OBl" kind="show" identifier="segueToMain" id="7BQ-Yb-E74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtO-xA-A8Q" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="-568"/>
+        </scene>
+        <!--Leaderboards-->
+        <scene sceneID="PFx-ru-B02">
+            <objects>
+                <tableViewController id="NuM-Z9-pK2" customClass="LeaderboardTableViewController" customModule="RDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="z78-LD-rbc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="ZD4-vA-3HD" detailTextLabel="Iih-Dv-1ui" style="IBUITableViewCellStyleSubtitle" id="gXt-sU-vOO">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXt-sU-vOO" id="wBk-rk-gta">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZD4-vA-3HD">
+                                            <rect key="frame" x="16.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iih-Dv-1ui">
+                                            <rect key="frame" x="15.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NuM-Z9-pK2" id="vh2-MV-KyQ"/>
+                            <outlet property="delegate" destination="NuM-Z9-pK2" id="x4C-SN-RmF"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Leaderboards" image="leaderboards" id="rbq-RI-W51"/>
+                    <connections>
+                        <outlet property="leaderboardView" destination="z78-LD-rbc" id="EbI-kU-6X4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJU-ho-whp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2745" y="-591"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="leaderboards" width="30" height="30"/>
+        <image name="map" width="30" height="30"/>
+        <image name="mountain" width="30" height="30"/>
+        <image name="nearbye" width="30" height="30"/>
+        <image name="rock_image" width="960" height="634"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rbh-GA-7D6"/>
+    </inferredMetricsTieBreakers>
+</document>
