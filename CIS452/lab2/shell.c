@@ -41,9 +41,16 @@ int main(int argc, char **argv) {
     // Strip a tricky newline
     args[i][strcspn(args[i], "\n")] = 0;
 
-    
+    // Null terminate
     args[i+1] = NULL;
 
+    // Logging args
+    for (int j=0;j<i+1;j++) {
+      printf("arg %d: %s\n", j, args[j]);
+    }
+    fflush(stdout);
+
+    // Begin forking
     pid_t pid, child;
     int status;
     if ((pid = fork()) < 0) {
@@ -60,9 +67,13 @@ int main(int argc, char **argv) {
       }
     }
 
+    // Get the status
     child = wait(&status);
 
-    printf("Child %d returned with status %d", child, status);
+    FILE *f;
+    
+    
+    printf("Child %d returned with status %d\n", child, status);
     
     
   }
