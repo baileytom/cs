@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/time.h>
+#include <sys/resource.h>
 
 #define MAX_SIZE 1024
 
@@ -44,12 +46,6 @@ int main(int argc, char **argv) {
     // Null terminate
     args[i+1] = NULL;
 
-    // Logging args
-    for (int j=0;j<i+1;j++) {
-      printf("arg %d: %s\n", j, args[j]);
-    }
-    fflush(stdout);
-
     // Begin forking
     pid_t pid, child;
     int status;
@@ -58,23 +54,31 @@ int main(int argc, char **argv) {
       exit(1);
     } else if (pid == 0) {
       printf("I am a child.");
-      printf(args[0]);
+      printf("%s", args[0]);
       if (execvp(args[1], &args[1]) < 0) {
       perror("Child failed.");
 	exit(1);
       } else {
 	exit(0);
       }
+    } else {
+
+      // Get the status
+      child = wait(&status);
+      long seconds;
+      long milsecs;
+      int context_switch;
+      struct rusage resources;
+      if (getrusage(RUSAGE_CHILDREN, &resources) < 0) {
+        printf("Failed.");
+      } else {
+      	seconds = resources.ru_utime.tv_sec;
+	milsecs = resources.ru_utime.tv_usec;
+	context_switch = resources.ru_nivcsw;
+	printf("Child %d returned with status %d.\nCPU time: %ld s %ld ms\nContext switches: %d\n", child, status, seconds, milsecs, context_switch);
+      }
     }
-
-    // Get the status
-    child = wait(&status);
-
-    FILE *f;
-    
-    
-    printf("Child %d returned with status %d\n", child, status);
-    
-    
   }
+  return 0;
 }
+
