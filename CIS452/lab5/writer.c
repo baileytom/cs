@@ -20,11 +20,16 @@ void* catcher(void* val);
 
 int shmId;
 char* shmPtr;
+key_t key;
 
 int main ()
-{  
+{
+  // create key
+  key = ftok("shmfile", 123);
+  
   // create shm segment
-  if ((shmId = shmget(IPC_PRIVATE, SIZE, IPC_CREAT|S_IRUSR|S_IWUSR)) < 0) {
+  if ((shmId = shmget(key
+		      , SIZE, IPC_CREAT|S_IRUSR|S_IWUSR)) < 0) {
     perror("bad\n");
     exit(1);
   }
@@ -63,7 +68,7 @@ int main ()
 	    perror("getting stat failed\n");
 	    exit(1);
 	  }
-	  printf("%d -- %d\n", stat.shm_perm.mode, SHM_LOCKED);
+	  printf("%d -- %d -- %d\n", stat.shm_perm.mode, SHM_LOCKED, (int) *shmPtr);
 	} while (stat.shm_perm.mode == SHM_LOCKED);
 
 	// lock the shm
@@ -73,7 +78,8 @@ int main ()
 	}
 
 	printf("writing mem\n");
-	memcpy(shmPtr, line, len);
+	memcpy(shmPtr+1, line, len);
+	*(shmPtr+len) = '\0';
 
 	// unlock the shm
 	if ((shmctl(shmId, SHM_UNLOCK, 0)) < 0) {
