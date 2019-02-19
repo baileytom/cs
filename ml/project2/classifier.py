@@ -55,8 +55,6 @@ class DocumentClassifier(object):
         class_prob = math.log(self.get_class_prob(c))
         product = 0
         for word in doc:
-            if len(word) < 3:
-                continue
             product += math.log(self.get_word_prob(c, word))
         return class_prob + product
 
