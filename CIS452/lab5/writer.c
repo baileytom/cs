@@ -78,8 +78,9 @@ int main ()
 	}
 
 	printf("writing mem\n");
+	memcpy(shmPtr, line, 1);
 	memcpy(shmPtr+1, line, len);
-	*(shmPtr+len) = '\0';
+	*(shmPtr+len+1) = '\0';
 
 	// unlock the shm
 	if ((shmctl(shmId, SHM_UNLOCK, 0)) < 0) {

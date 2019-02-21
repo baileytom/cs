@@ -43,36 +43,14 @@ int main()
     exit(1);
   }
 
-  while (1) {
-    // wait here til the shm is not locked
-    struct shmid_ds stat;
-    do {
-      if ((shmctl(shmId, IPC_STAT, &stat)) < 0) {
-	perror("getting stat failed\n");
-	exit(1);
-      }
-      printf("%d -- %d -- %d\n", stat.shm_perm.mode, SHM_LOCKED, (int) *shmPtr);
-    } while (stat.shm_perm.mode == SHM_LOCKED);
-
-    // lock the shm
-    if ((shmctl(shmId, SHM_LOCK, 0)) < 0) {
-      perror("locking failed\n");
-      exit(1);
-    }
-
-    // update reads
-    int reads = (int) *shmPtr + 1;
-    memcpy(shmPtr, &reads, 1);
-
-    // print line
-    printf("%s", *(shmPtr + 1));
-  
-    // unlock the shm
-    if ((shmctl(shmId, SHM_UNLOCK, 0)) < 0) {
-      perror("unlocking failed\n");
-      exit(1);
+  while(1) {
+    if (*shmPtr != '*') {
+      printf("%s\n", shmPtr+1);
+      *shmPtr = '*';
     }
   }
+
+  return 0;
 }
 
 void* catcher(void* val) {
