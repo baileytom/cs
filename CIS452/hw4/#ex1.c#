@@ -1,0 +1,11 @@
+boolean token = T;
+
+Pi: 
+if (token)
+  token = F;
+else {
+  while(!token)
+    sleep(5);
+  token = F;   //CS
+token = T
+  
