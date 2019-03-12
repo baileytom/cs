@@ -22,10 +22,6 @@ def process_data(data):
     categories = data[1].split(',')
     attributes = {l.split(',')[0]: l.split(',')[2:] for l in data[3:3+int(data[2])]}
     examples = [l.split(',') for l in data[4+int(data[2]):]]
-
-    print(len(examples))
-
-    
     return [categories, attributes, examples]
 
 # Return -sum from i=1 to k of p_i * log2(p_i)
@@ -53,8 +49,6 @@ def get_gain(attribute, S):
     for value in attributes[attribute]:
         S_v = list(filter(lambda x: x[a_pos] == value, S))
         msum += len(S_v) / len(S) * get_entropy(S_v)
-        print(msum)
-    print(get_entropy(S), msum)
     return get_entropy(S) - msum
 
 class Node(object):
@@ -76,7 +70,6 @@ def recur(node_attributes, node_examples):
             all_the_same = False
     if all_the_same:
         # return a leaf with that class label
-        print("this might fail")
         return Node(node_examples[0][-1])
 
     # else if there are no more attributes to test
@@ -89,20 +82,15 @@ def recur(node_attributes, node_examples):
                 counter[example[-1]] = 1
         counted = sorted(counter, key=counter.get, reverse=True)
         # return a leaf with the most common class label
-        print("making leaf node w/ value {}".format(counted[0]))
         return Node(counted[0])
 
     # otherside choose the attribute a that maximizes the information gain of S
     max, best = -1, None
     for a in node_attributes:
-        print(a)
         gain = get_gain(a, node_examples)
-        print(a, gain)
         if gain > max:
             max = gain
             best = a
-    print(best)
-    input()
     # let attribute a be the decision for the current node
     a = best
     a_pos = list(attributes.keys()).index(best)
@@ -111,11 +99,8 @@ def recur(node_attributes, node_examples):
     node.attribute = best
     # add a branch from the current node for each possible value of a
     for value in attributes[a]:
-        print("Branching for value {} of attribute {}".format(value, a))
         # sort examples that match this value of attribute a
         S_v = list(filter(lambda x: x[a_pos] == value, node_examples))
-        #for x in S_v:
-        #    print(x)
         # recursively call ID3(Sv) on the set of examples in each branch
         if S_v == []:
             continue
@@ -134,11 +119,18 @@ def traverse(node, indent=""):
 def make_decision_tree(filename):
     process_data(read_data(filename))
     root = recur(list(attributes.keys()), examples)
+    #traverse(root)
+    return root
 
-    traverse(root)
+def classify(node, example):
+    if node.result:
+        return node.result
+    a_pos = list(attributes.keys()).index(node.attribute)
+    return classify(node.children[example[a_pos]], example)
+    
+root = make_decision_tree("fishing.data")
+    
+example1 = ["Strong", "Warm", "Cold", "Sunny"]
+example2 = ["Weak", "Cold", "Warm", "Rainy"]
 
-    
-    
-    
-make_decision_tree("fishing.data")
-    
+print(classify(root, example2))
